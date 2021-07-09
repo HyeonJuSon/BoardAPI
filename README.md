@@ -8,11 +8,11 @@
 
 - Package Exploer 에서 마우스 우클릭 > New > Spring Starter Projcect를 클릭합니다.
 
-  ![1](C:\Users\kkobu\git\BoardAPI\img\1.png)
+  ![1](/img/1.png)
 
 - Name에 이름을 입력하고 Next를 눌립니다.
 
-  <img src="C:\Users\kkobu\git\BoardAPI\img\2.png" alt="2" style="zoom:80%;" />
+  <img src="/img/2.png" alt="2" style="zoom:80%;" />
 
 - Dependency 설정을 하고 Finsh하면 Spring Boot Project가 생성됩니다.
   (저는 pom.xml에서 설정할 예정이라서 그냥 넘어간 후 생성헀습니다. )
@@ -29,7 +29,7 @@
 
 - Git 과 연동까지 되었으면 다음과 같이 프로젝트가 구성됩니다.
 
-  ![3](C:\Users\kkobu\git\BoardAPI\img\3.png)
+  ![3](/img/3.png)
 
 
 
