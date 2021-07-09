@@ -40,3 +40,25 @@
 - pom.xml 에서 필요한 Dependency들을 설정해줍니다.
 - 저는 mybatis, mysql 등 필요한 것들을 설정하였습니다.
 
+
+
+# 3. DB
+
+> MySql을 사용하여 DB 생성
+
+- Board Schema를 생성한다.
+
+- User table 을 생성한다.
+
+  <img src="/img/4.png" alt="4"  />
+
+  - Columns
+
+    | **userid**     | varchar(10) PK |
+    | -------------- | :------------- |
+    | userpw         | varchar(10)    |
+    | username       | varchar(20)    |
+    | useremailfront | varchar(30)    |
+    | useremailback  | varchar(30)    |
+    | joindate       | timestamp      |
+
