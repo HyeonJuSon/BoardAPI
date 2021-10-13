@@ -40,3 +40,11 @@
 - pom.xml 에서 필요한 Dependency들을 설정해줍니다.
 - 저는 mybatis, mysql 등 필요한 것들을 설정하였습니다.
 
+
+
+# 3. swagger에서 api 확인하기
+
+> 링크 접속 
+
+- http://localhost:8080/swagger-ui/index.html
+
