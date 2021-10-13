@@ -8,7 +8,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
 @EnableAspectJAutoProxy
-@MapperScan(basePackages = "com.son.board.model.repo") // mybatis
+@MapperScan(basePackages = "com.son.board.model.repository") // mybatis
 public class BoardApIApplication implements WebMvcConfigurer {
 
 	public static void main(String[] args) {
