@@ -42,9 +42,32 @@
 
 
 
-# 3. swagger에서 api 확인하기
+# 3. DB
+
+> MySql을 사용하여 DB 생성
+
+- Board Schema를 생성한다.
+
+- User table 을 생성한다.
+  <img src="/img/4.png" alt="4"/>
+
+- Columns
+
+  | useri**d**         | **varchar(10) PK** |
+  | ------------------ | ------------------ |
+  | **userpw**         | **varchar(10)**    |
+  | **username**       | **varchar(20)**    |
+  | **useremailfront** | **varchar(30)**    |
+  | **useremailback**  | **varchar(30)**    |
+  | **joindate**       | **timestamp**      |
+
+  
+
+# 4. swagger에서 api 확인하기
 
 > 링크 접속 
 
 - http://localhost:8080/swagger-ui/index.html
+
+
 
