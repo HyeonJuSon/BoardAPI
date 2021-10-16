@@ -1,5 +1,7 @@
 import { createApp, h } from 'vue'
 import App from './App.vue'
+// store
+import store from './common/store'
 // router
 import router from './router'
 // axios
