@@ -8,6 +8,6 @@ public interface UserService {
 	
 	UserDto login(String userid, String userpw) throws SQLException;
 	UserDto findById(String userid) throws SQLException;
-	boolean insert(UserDto userDto) throws SQLException;
+	boolean join(UserDto userDto) throws SQLException;
 	
 }

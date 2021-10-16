@@ -18,7 +18,7 @@ import com.son.board.model.service.UserService;
 import io.swagger.annotations.ApiOperation;
 
 @RestController
-@RequestMapping("/user")
+@RequestMapping("/api")
 public class UserController {
 	private static final String SUCCESS = "success";
 	private static final String FAIL = "fail";
@@ -34,7 +34,7 @@ public class UserController {
 //	}
 	
 	@ApiOperation(value = "특정 회원의 정보를 반환한다.", response = UserDto.class)
-	@GetMapping("{userid}")
+	@GetMapping("/user/{userid}")
 	public ResponseEntity<UserDto> findById(@PathVariable String userid) throws SQLException{
 		UserDto target =  uService.findById(userid);
 		if(target==null) return new ResponseEntity(HttpStatus.NO_CONTENT);
@@ -42,10 +42,10 @@ public class UserController {
 	}
 	
 	@ApiOperation(value="회원 가입")
-	@PostMapping("/insert")
+	@PostMapping("/user/join")
 	public ResponseEntity<String> insert(@RequestBody UserDto userDto) throws SQLException{
 		System.out.println("회원 가입"+userDto);
-		if(uService.insert(userDto)) return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
+		if(uService.join(userDto)) return new ResponseEntity<String>(SUCCESS, HttpStatus.OK);
 		return new ResponseEntity<String>(FAIL, HttpStatus.NO_CONTENT);
 	}
 	

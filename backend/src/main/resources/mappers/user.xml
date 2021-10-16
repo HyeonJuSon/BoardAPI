@@ -17,7 +17,7 @@
 </select>
 
 <!-- 회원 가입 -->
-<insert id="insert">
+<insert id="join">
 	insert into user (userid, userpw, username, useremailfront, useremailback)
 	values (#{userid}, #{userpw},#{username}, #{useremailfront}, #{useremailback})
 </insert>

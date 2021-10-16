@@ -21,8 +21,8 @@ public class UserServiceImpl implements UserService {
 	}
 	
 	@Override
-	public boolean insert(UserDto userDto) throws SQLException{
-		return userRepository.insert(userDto)==1;
+	public boolean join(UserDto userDto) throws SQLException{
+		return userRepository.join(userDto)==1;
 	}
 
 	@Override

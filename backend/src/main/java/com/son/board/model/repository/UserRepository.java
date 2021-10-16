@@ -9,7 +9,7 @@ public interface UserRepository {
 	// login
 	UserDto login(String userid, String userpw) throws SQLException;
 	// c
-	int insert(UserDto userDto) throws SQLException;
+	int join(UserDto userDto) throws SQLException;
 	// r
 	UserDto findById(String userid) throws SQLException;	
 	// u
