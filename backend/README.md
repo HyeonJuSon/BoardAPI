@@ -49,6 +49,7 @@
 - Board Schema를 생성한다.
 
 - User table 을 생성한다.
+
   <img src="/img/4.png" alt="4"/>
 
 - Columns
