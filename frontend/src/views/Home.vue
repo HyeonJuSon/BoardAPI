@@ -1,3 +1,29 @@
 <template>
-  HIHI
+ <div class="test">
+   HIHI
+ </div>
 </template>
+
+<script>
+import {useStore} from 'vuex';
+export default{
+  name:"Home",
+  setup(){
+    const store= useStore();
+  store.dispatch('root/getUser','test')
+  .then((response)=>{
+    console.log(response.data);
+  });
+  }
+}
+
+
+</script>
+
+<style scoped>
+.test{
+  background-color: black;
+  height: 100vh;
+}
+
+</style>
