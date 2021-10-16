@@ -10,7 +10,8 @@ export default{
   name:"Home",
   setup(){
     const store= useStore();
-  store.dispatch('root/getUser','test')
+    let id = 'test';
+  store.dispatch('root/getUser',id)
   .then((response)=>{
     console.log(response.data);
   });
