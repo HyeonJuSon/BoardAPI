@@ -21,16 +21,19 @@ export default {
 </script>
 
 <style>
+@import url('assets/css/Flex.css');
 * {
   padding: 0;
   margin: 0;
 }
 
 .app {
-  min-height: 50vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-content: center;
+  background-color:rgb(64, 100, 134);
 }
+
 </style>

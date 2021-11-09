@@ -5,5 +5,6 @@ export default {
         name: '',
         email: '',
         joindate: '',
-    }
+    },
+    isLogin: false,
 }

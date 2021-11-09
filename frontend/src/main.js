@@ -7,9 +7,8 @@ import router from './router'
 // axios
 import VueAxios from './common/axios'
 import axios from './common/axios'
-
 const app = createApp({
-    render: () => h(App)
+    render: () => h(App),
 })
 app.use(VueAxios, axios)
 app.use(store)
