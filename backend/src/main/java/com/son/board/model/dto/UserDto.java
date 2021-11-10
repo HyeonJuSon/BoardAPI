@@ -24,11 +24,9 @@ public class UserDto {
 	public String getUserid() {
 		return userid;
 	}
-	
 	public void setUserid(String userid) {
 		this.userid = userid;
 	}
-	
 	public String getUserpw() {
 		return userpw;
 	}
@@ -47,21 +45,18 @@ public class UserDto {
 	public void setUseremailfront(String useremailfront) {
 		this.useremailfront = useremailfront;
 	}
-	
 	public String getUseremailback() {
 		return useremailback;
 	}
 	public void setUseremailback(String useremailback) {
 		this.useremailback = useremailback;
 	}
-	
 	public String getJoindate() {
 		return joindate;
 	}
 	public void setJoindate(String joindate) {
 		this.joindate = joindate;
 	}
-	
 	// toString
 	@Override
 	public String toString() {

@@ -25,14 +25,6 @@ public class UserController {
 	@Autowired
 	private UserService uService;
 	
-//	@ApiOperation(value="로그인")
-//	@GetMapping("/login")
-//	public ResponseEntity<UserDto> login(@RequestBody String userid, @RequestBody String userpw ) throws SQLException{
-//		UserDto now = uService.login(userid, userpw);
-//		if(now==null) return new ResponseEntity(HttpStatus.NO_CONTENT);
-//		return new ResponseEntity<UserDto>(now,HttpStatus.OK);
-//	}
-	
 	@ApiOperation(value = "특정 회원의 정보를 반환한다.", response = UserDto.class)
 	@GetMapping("/user/{userid}")
 	public ResponseEntity<UserDto> findById(@PathVariable String userid) throws SQLException{
